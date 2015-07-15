@@ -1,3 +1,5 @@
+<?php
+
 namespace AppBundle\Controller;
 
 use Symfony\BundleFrameworkBundle\Controller\Controller;
