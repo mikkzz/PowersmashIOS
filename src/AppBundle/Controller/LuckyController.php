@@ -1,9 +1,10 @@
 namespace AppBundle\Controller;
+
 use Symfony\BundleFrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class LuckyController extends Controller
+class LuckyController
 {
 
   public function numberAction()
