@@ -3,7 +3,7 @@ use Symfony\BundleFrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
-class LuckyController
+class LuckyController extends Controller
 {
 
   public function numberAction()
