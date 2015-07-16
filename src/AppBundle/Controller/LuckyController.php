@@ -10,12 +10,29 @@ class LuckyController
     /**
      * @Route("/lucky/number")
      */
-    public function numberAction()
+    /*public function numberAction()
     {
         $number = rand(0, 100);
 
         return new Response(
             '<html><body>Lucky number: '.$number.'</body></html>'
         );
+    }
+
+    public function testFunction()
+    {
+      w
+    }*/
+    public function apiNumberAction()
+    {
+
+      $data = array(
+        'lucky_number' => rand(0, 100);
+      );
+      return new Response(
+        json_encode($data),
+        200,
+        array('Content-type' => 'application/json')
+      );
     }
 }
