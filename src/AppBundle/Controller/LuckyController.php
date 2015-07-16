@@ -28,7 +28,7 @@ class LuckyController
     {
 
       $data = array(
-        'lucky_number' => rand(0, 100);
+        'lucky_number' => rand(0, 100)
       );
       return new Response(
         json_encode($data),
