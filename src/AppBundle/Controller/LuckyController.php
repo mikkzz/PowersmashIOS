@@ -3,37 +3,22 @@ namespace AppBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class LuckyController
 {
     /**
-     * @Route("/lucky/number")
+     * @Route("/")
      */
-    /*public function numberAction()
+    public function numberAction()
     {
-        $number = rand(0, 100);
-
-        return new Response(
-            '<html><body>Lucky number: '.$number.'</body></html>'
-        );
-    }
-
-    public function testFunction()
-    
-    {
-      w
-    }*/
-    public function apiNumberAction()
-    {
-
-      $data = array(
-        'lucky_number' => rand(0, 100)
-      );
-      return new Response(
-        json_encode($data),
-        200,
-        array('Content-type' => 'application/json')
-      );
+	$data = array();
+	$data['bobo1']  = "James Yap";
+	$data['bobo2'] = "Karl Seth Nerva";
+	$data['bobo3'] = "Dhan  Dan";
+	$data['bobo4'] = "Christian Perez";
+	$data['bobo5'] = "James Nohara";
+	$data['bobo6'] = "Adrian Paul";
+        return new JsonResponse($data);
     }
 }
