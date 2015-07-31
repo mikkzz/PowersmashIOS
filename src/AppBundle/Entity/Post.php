@@ -13,7 +13,6 @@ class Post
      * @var integer
      */
     private $id;
-
     /**
      * @var string
      */
@@ -28,7 +27,7 @@ class Post
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -51,7 +50,7 @@ class Post
     /**
      * Get string
      *
-     * @return string 
+     * @return string
      */
     public function getString()
     {
@@ -74,7 +73,7 @@ class Post
     /**
      * Get body
      *
-     * @return string 
+     * @return string
      */
     public function getBody()
     {
