@@ -1,0 +1,3 @@
+powersmash_ios_reservation_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PowersmashIOSReservationBundle:Default:index }

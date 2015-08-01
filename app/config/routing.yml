@@ -1,3 +1,15 @@
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+powersmash_ios_play:
+    resource: "@PowersmashIOSPlayBundle/Resources/config/routing.yml"
+    prefix:   /
+
+powersmash_ios_reservation:
+    resource: "@PowersmashIOSReservationBundle/Resources/config/routing.yml"
+    prefix:   /
+
+powersmash_ios_blog:
+    resource: "@PowersmashIOSBlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+powersmash_ios_admin:
+    resource: "@PowersmashIOSAdminBundle/Resources/config/routing.yml"
+    prefix:   /

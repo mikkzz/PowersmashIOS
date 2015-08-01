@@ -1,0 +1,3 @@
+powersmash_ios_play_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: PowersmashIOSPlayBundle:Default:index }
