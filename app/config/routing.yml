@@ -1,15 +1,15 @@
 powersmash_ios_play:
     resource: "@PowersmashIOSPlayBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /play
 
 powersmash_ios_reservation:
     resource: "@PowersmashIOSReservationBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /members
 
 powersmash_ios_blog:
     resource: "@PowersmashIOSBlogBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /blog
 
 powersmash_ios_admin:
     resource: "@PowersmashIOSAdminBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /admin
