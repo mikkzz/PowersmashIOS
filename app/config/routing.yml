@@ -1,3 +1,7 @@
+powersmash_main:
+    resource: "@PowersmashMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
 powersmash_ios_play:
     resource: "@PowersmashIOSPlayBundle/Resources/config/routing.yml"
     prefix:   /play
