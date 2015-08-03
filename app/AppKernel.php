@@ -20,7 +20,7 @@ class AppKernel extends Kernel
             new PowersmashIOS\BlogBundle\PowersmashIOSBlogBundle(),
             new PowersmashIOS\ReservationBundle\PowersmashIOSReservationBundle(),
             new PowersmashIOS\PlayBundle\PowersmashIOSPlayBundle(),
-            new Powersmash\MainBundle\PowersmashMainBundle(),
+            new PowersmashIOS\MainBundle\PowersmashIOSMainBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

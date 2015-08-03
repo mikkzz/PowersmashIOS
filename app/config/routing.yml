@@ -1,5 +1,5 @@
 powersmash_main:
-    resource: "@PowersmashMainBundle/Resources/config/routing.yml"
+    resource: "@PowersmashIOSMainBundle/Resources/config/routing.yml"
     prefix:   /
 
 powersmash_ios_play:
