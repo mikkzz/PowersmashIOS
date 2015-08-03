@@ -15,6 +15,7 @@ This is in compliance to the partial requirement of the subject ITSPROJ
 | Darrel Jay Occeña |
 
 Powersmash Web Application specification
+
 1. A fully functional static web page that showcases the Powersmash facilities
 2. A relative link that shows the blogs, tournaments and announcements made by the Powersmash Management
 3. An admin portal that handles blogs, tournaments, announcements, member details and reservations
