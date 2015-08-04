@@ -8,6 +8,9 @@
     </head>
     <body>
         {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+		{% javascripts %}
+		{% end javascripts %}
+	{% endblock %}
     </body>
 </html>
