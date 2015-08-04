@@ -33,7 +33,6 @@ Powersmash Web Application specification
 #####How to install
 
 ```sh
+cd `*path_to_folder*`
 composer install
-cd "*path_to_powersmashios*/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/"
-php build_bootstrap.php
 ```
