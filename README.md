@@ -30,6 +30,11 @@ Powersmash Web Application specification
 | Web Server *eg. Apache, Nginx or lighttpd*|
 | MySQL Server |
 
+####TODO
+Templates
+Controller
+Business Logic
+
 #####How to install
 
 ```sh
