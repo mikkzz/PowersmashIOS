@@ -7,16 +7,14 @@
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body class ="{%block theme%}default{%endblock%}">
-      <body bgcolor="#000000">
-              {%block layout%}<center><font face="Arial Black", Gadget, sans-serfi color="white"><h1>Welcome to PowerSmash!</h1></font></center>{%endblock%}
-              {%block btnhome%}<button  style="background-color:#FFA500" type="Button" onclick="alert('Welcome to Home Page')"><h3>Home!</h3></button>{%endblock%}
-              {%block btnblog%}<button style="background-color:#FFA500" type="Button" onclick="alert('Blog Page')"><h3>PowerSmash Blog Site</h3></button>{%endblock%}
-              {%block btnevent%}<button style="background-color:#FFA500" type="Button" onclick="alert('Blog Page')"><h3>Events</h3></button>{%endblock%}
-              {%block btnmember%}<button style="background-color:#FFA500"  onclick="onmessage('Members list')"><h3>Members</h3></button>{%endblock%}
+      <body bgcolor="white">
+          {%block name%} <center><h3>PowerSmash</h3></center>{%endblock%}
 
-              {%block mapimage%}<img src="C:\Users\Dhada\Documents\Thesis\PowersmashIOs\src\PowersmashIOS"  style="width:304px;height:228px;">{%endblock%}
+        <div>
+            {%block body%}<button>Home</button><button>Service</button><button>Members</button>
+            <button>Events</button><button>Blog</button>{%endblock%}
 
-              <div class="col-mid-3"><p>This web is created with the help of w3school</p></div>
+          </div>
 
       </body>
   </body>
