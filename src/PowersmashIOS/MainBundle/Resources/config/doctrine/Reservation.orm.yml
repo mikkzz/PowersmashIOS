@@ -1,0 +1,21 @@
+PowersmashIOS\MainBundle\Entity\Reservation:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\MainBundle\Entity\ReservationRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        memId:
+            type: integer
+            column: mem_id
+        date:
+            type: date
+        time:
+            type: time
+        court:
+            type: integer
+    lifecycleCallbacks: {  }

@@ -1,0 +1,43 @@
+PowersmashIOS\ReservationBundle\Entity\Member:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\ReservationBundle\Entity\MemberRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fname:
+            type: string
+            length: '100'
+        mname:
+            type: string
+            length: 255
+        lname:
+            type: string
+            length: '100'
+        username:
+            type: string
+            length: 255
+        password:
+            type: string
+            length: 255
+        age:
+            type: integer
+        gender:
+            type: string
+            length: '6'
+        birthday:
+            type: date
+        email:
+            type: string
+            length: 255
+        address:
+            type: string
+            length: 255
+        contact:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

@@ -1,0 +1,11 @@
+PowersmashIOS\PlayBundle\Entity\Court:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\PlayBundle\Entity\CourtRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
