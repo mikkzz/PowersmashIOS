@@ -31,9 +31,9 @@ Powersmash Web Application specification
 | MySQL Server |
 
 ####TODO
-Templates
-Controller
-Business Logic
+1. Templates `On-going`
+2. Controller `On-going`
+3. Business Logic
 
 #####How to install
 
