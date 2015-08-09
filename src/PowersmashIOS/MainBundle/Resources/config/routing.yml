@@ -1,3 +1,9 @@
-powersmash_ios_main_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: PowersmashIOSMainBundle:Default:index }
+main_homepage:
+    path:     /
+    defaults: { _controller: PowersmashIOSMainBundle:Main:index }
+main_about:
+    path:     /about
+    defaults: { _controller: PowersmashIOSMainBundle:Main:about }
+main_contact:
+    path:     /contact
+    defaults: { _controller: PowersmashIOSMainBundle:Main:contact }
