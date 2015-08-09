@@ -12,17 +12,9 @@ class MainController extends Controller
    */
   public function indexAction()
   {
+
     return $this->render('PowersmashIOSMainBundle:Static:index.html.twig');
-  }
 
-  public function aboutAction()
-  {
-    return $this->render('PowersmashIOSMainBundle:Static:about.html.twig');
-  }
-
-  public function contactAction()
-  {
-    return $this->render('PowersmashIOSMainBundle:Static:contact.html.twig');
   }
 
 }

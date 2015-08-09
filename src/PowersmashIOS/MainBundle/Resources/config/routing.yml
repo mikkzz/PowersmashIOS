@@ -1,17 +1,9 @@
 main_homepage:
     path:     /
     defaults: { _controller: PowersmashIOSMainBundle:Main:index }
-    requirements:
-      _method: GET
-
 main_about:
     path:     /about
     defaults: { _controller: PowersmashIOSMainBundle:Main:about }
-    requirements:
-      _method: GET
-
 main_contact:
     path:     /contact
     defaults: { _controller: PowersmashIOSMainBundle:Main:contact }
-    requirements:
-      _method: GET|POST

@@ -1,6 +1,6 @@
 <?php
 
-namespace PowersmashIOS\ReservationBundle\Entity;
+namespace PowersmashIOS\MainBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
 
