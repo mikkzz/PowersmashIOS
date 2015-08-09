@@ -1,6 +1,6 @@
 <?php
 
-namespace PowersmashIOS\MainBundle\Entity;
+namespace PowersmashIOS\ReservationBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -32,7 +32,7 @@ class Reservation
     /**
      * @var integer
      */
-    private $court;
+    private $courtId;
 
 
     /**
@@ -115,25 +115,25 @@ class Reservation
     }
 
     /**
-     * Set court
+     * Set courtId
      *
-     * @param integer $court
+     * @param integer $courtId
      * @return Reservation
      */
-    public function setCourt($court)
+    public function setCourtId($courtId)
     {
-        $this->court = $court;
+        $this->courtId = $courtId;
 
         return $this;
     }
 
     /**
-     * Get court
+     * Get courtId
      *
      * @return integer 
      */
-    public function getCourt()
+    public function getCourtId()
     {
-        return $this->court;
+        return $this->courtId;
     }
 }

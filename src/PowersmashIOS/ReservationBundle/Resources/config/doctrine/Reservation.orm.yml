@@ -1,7 +1,7 @@
-PowersmashIOS\MainBundle\Entity\Reservation:
+PowersmashIOS\ReservationBundle\Entity\Reservation:
     type: entity
     table: null
-    repositoryClass: PowersmashIOS\MainBundle\Entity\ReservationRepository
+    repositoryClass: PowersmashIOS\ReservationBundle\Entity\ReservationRepository
     id:
         id:
             type: integer
@@ -16,6 +16,7 @@ PowersmashIOS\MainBundle\Entity\Reservation:
             type: date
         time:
             type: time
-        court:
+        courtId:
             type: integer
+            column: court_id
     lifecycleCallbacks: {  }
