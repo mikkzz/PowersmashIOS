@@ -26,8 +26,13 @@
             </button>
             <a class="navbar-brand" href="{{ path('main_homepage') }}">Powersmash</a>
           </div>
-          {% block navbar %}
-          {% endblock %}
+          <div class="collapse navbar-collapse" id="collapsed-bar">
+            {% block navbar %}
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="{{ path('main_homepage') }}">Home</a>
+              </ul>
+            {% endblock %}
+          </div>
         </div>
       </nav>
         {% block body %}{% endblock %}
