@@ -1,9 +1,29 @@
 main_homepage:
     path:     /
     defaults: { _controller: PowersmashIOSMainBundle:Main:index }
+
 main_about:
     path:     /about
     defaults: { _controller: PowersmashIOSMainBundle:Main:about }
+
 main_contact:
     path:     /contact
     defaults: { _controller: PowersmashIOSMainBundle:Main:contact }
+
+main_login:
+    path:     /login
+    defaults: { _controller: PowersmashIOSMainBundle:Main:login }
+
+main_postlogin:
+  path: /login/post
+  defaults: { _controller: PowersmashIOSMainBundle:Main:postlogin }
+  methods: [POST]
+
+main_register:
+  path: /register
+  defaults: { _controller: PowersmashIOSMainBundle:Main:register }
+
+main_postregister:
+  path: /register/post
+  defaults: { _controller: PowersmashIOSMainBundle:Main:postregister }
+  methods: [POST]
