@@ -32,4 +32,14 @@ class MainController extends Controller
     return $this->render('PowersmashIOSMainBundle:Static:register.html.twig');
   }
 
+  public function postloginAction()
+  {
+
+  }
+
+  public function postregisterAction()
+  {
+
+  }
+
 }
