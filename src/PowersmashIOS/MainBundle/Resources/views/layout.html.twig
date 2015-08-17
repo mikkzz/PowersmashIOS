@@ -1,1 +1,12 @@
 {% extends '::base.html.twig' %}
+
+{% block navbar %}
+
+{% if app.user %}
+<li><a href="{{ path('main_logout') }}">Logout</a>
+<li><a href="{{ path('reserve_main') }}">Reserve</a>
+{% else %}
+<li><a href="{{ path('main_login') }}">Login</a>
+{% endif %}
+
+{% endblock %}
