@@ -638,7 +638,11 @@ class SymfonyRequirements extends RequirementCollection
         }
 
         $this->addRecommendation(
+<<<<<<< HEAD
             class_exists('Locale'),
+=======
+            extension_loaded('intl'),
+>>>>>>> upstream/master
             'intl extension should be available',
             'Install and enable the <strong>intl</strong> extension (used for validators).'
         );

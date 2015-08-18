@@ -1,3 +1,9 @@
-powersmash_ios_blog_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: PowersmashIOSBlogBundle:Default:index }
+blog_homepage:
+    path:     /{page}
+    defaults: { _controller: PowersmashIOSBlogBundle:Blog:index, page: 1 }
+    requirements:
+      page: \d+
+
+#blog_slug:
+#    path:     /{slug}
+#    defaults: { _controller: PowersmashIOSBlogBundle:Blog:slug,  }

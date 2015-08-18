@@ -1,0 +1,23 @@
+PowersmashIOS\BlogBundle\Entity\Post:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\BlogBundle\Entity\PostRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        author:
+            type: string
+            length: '100'
+        subject:
+            type: string
+            length: '50'
+        body:
+            type: text
+        datetimeCreated:
+            type: datetime
+            column: datetime_created
+    lifecycleCallbacks: {  }

@@ -1,0 +1,23 @@
+PowersmashIOS\BlogBundle\Entity\Comment:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\BlogBundle\Entity\CommentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+        body:
+            type: text
+        email:
+            type: string
+            length: '100'
+        postId:
+            type: integer
+            column: post_id
+    lifecycleCallbacks: {  }

@@ -1,0 +1,25 @@
+PowersmashIOS\PlayBundle\Entity\Tournament:
+    type: entity
+    table: null
+    repositoryClass: PowersmashIOS\PlayBundle\Entity\TournamentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '100'
+        finished:
+            type: boolean
+        teams:
+            type: integer
+        type:
+            type: string
+            length: '100'
+        gender:
+            type: string
+            length: '100'
+    lifecycleCallbacks: {  }

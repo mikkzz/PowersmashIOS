@@ -11,9 +11,10 @@ class BlogController extends Controller
    * @return Dynamic page
    * @TODO Render dynamic contents from the database
    */
+
   public function indexAction()
   {
-    return $this->render('PowersmashBlogBundle:Blog:index.html.twig')
+    return $this->render('PowersmashBlogBundle:Blog:index.html.twig');
   }
   /**
    * Blog post view controller
@@ -22,6 +23,6 @@ class BlogController extends Controller
    */
   public function viewAction($page)
   {
-    return $this->render('')
+    return $this->render('');
   }
 }

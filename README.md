@@ -30,10 +30,14 @@ Powersmash Web Application specification
 | Web Server *eg. Apache, Nginx or lighttpd*|
 | MySQL Server |
 
+####TODO
+1. Templates `On-going`
+2. Controller `On-going`
+3. Business Logic
+
 #####How to install
 
 ```sh
+cd `*path_to_folder*`
 composer install
-cd "*path_to_powersmashios*/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/bin/"
-php build_bootstrap.php
 ```
