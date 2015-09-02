@@ -1,5 +1,94 @@
 {% extends 'PowersmashIOSMainBundle::layout.html.twig' %}
 
 {% block body %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>{% filter upper %}About Us{% endfilter %}</h3>
+          {{ "PowerSmash Badminton court was design to help our community to enjoy and relax their extra time with their special love ones. Also it will help people develope their talents and specialties when it comes to badminton having this oppurtunity to help our fellow country men" | capitalize}}
+          <br>
+          <div class="imgcontainer">
+            {% image '@PowersmashIOSMainBundle/Resources/assets/img/image.jpg' %}
+              <img src="{{asset_url}}"/>
+            {% endimage %}
+          </div>
 
+      </div>
+      <div class="col-md-4">
+        <h3>{% filter upper%}MORE ABOUT US{% endfilter %}</h3>
+          {{ "PowerSmash Badminton court was build to help people to enhance their abilities. Having the good facilities and well experience crew that will assist them. Powersmash help you to improve your skill when i comes to badminton sport." |nl2br}}
+            <br>
+            <div class="imgcontainer">
+              {% image '@PowersmashIOSMainBundle/Resources/assets/img/image3.jpg' %}
+                <img src="{{asset_url}}"/>
+              {% endimage %}
+            </div>
+      </div>
+    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <h2>{{"Footer for About Us"}}</h2>
+
+
+  <div class="container">
+
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+            <h3>{{"TERMS AND CONDITIONS" | upper}}</h3>
+
+            {{"To our loyal customers we would like to inform you that your schedule of reservation will be valid until you meet the following Terms and Conditions:" | capitalize}}
+                <br>
+                <br>
+              <small>{{"1. Your time reservation will automatically start when it meet the corresponding time you reserve." }}</small>
+                <br>
+              <small>{{"2. The member that reserve the court must arrived 15mins after the actual time he reserve or the member will be notify as NO SHOW and will be penalized as it first NO SHOW "}}</small>
+                <br>
+              <small>{{"3. The member that been penalized 3 consecutive times will be automatically remove/ban as a member of our "}}</small>
+        </div>
+
+        <div class="col-md-4">
+          <h3>{% filter upper %}regsitration form{% endfilter %}</h3>
+            <form>
+              <input type="text" name='fname' placeholder="First Name" size="25" /><br><br>
+              <input type="text" name='lname' placeholder="Last Name" size="25" /><br><br>
+              <input type="text" name='address' placeholder="Address" size="25" /><br><br>
+              <input type="int" name='numplayers' placeholder="Expected Number of Players" size="15" /><br><br>
+                <small>{{ "select Court" | capitalize }}</small>
+                <select>
+                  <option value="1" text="">Court 1</option>
+                  <option value="2">Court 2</option>
+                  <option value="3">Court 3</option>
+                  <option value="4">Court 4</option>
+                  <option value="5">Court 5</option>
+                  <option value="6">Court 6</option>
+                  <option value="7">Court 7</option>
+                </select><br><br>
+                      <input type="radio" name="paypal">Paypal</input>
+                        {% image'@PowersmashIOSMainBundle/Resources/assets/img/paypalimg2.jpg' %}
+                          <img src="{{asset_url}}" />
+                        {% endimage %}
+                          <br><br>
+                        <input type="radio" name="mastercard">MasterCard</input>
+                      {% image'@PowersmashIOSMainBundle/Resources/assets/img/masterimg.png' %}
+                          <img src="{{asset_url}}" />
+                        {% endimage %}
+                        <br><br>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="button" class="btn btn-primary">Cancel</button>
+              </form>
+            </div>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>{{"Footer For the webpage"}}</h2>
+  </div>
+</div>
 {% endblock %}

@@ -1,8 +1,8 @@
-<<<<<<< HEAD
+
 powersmash_ios_main_homepage:
     path:     /
     defaults: { _controller: PowersmashIOSMainBundle:Main:index }
-=======
+
 main_homepage:
     path:     /
     defaults: { _controller: PowersmashIOSMainBundle:Main:index }
@@ -32,4 +32,3 @@ main_postregister:
   path: /register/post
   defaults: { _controller: PowersmashIOSMainBundle:Main:postregister }
   methods: [POST]
->>>>>>> upstream/master

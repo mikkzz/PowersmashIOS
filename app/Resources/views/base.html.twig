@@ -14,20 +14,6 @@
           {% endstylesheets %}
         {% endblock %}
     </head>
-<<<<<<< HEAD
-    <body class ="{%block theme%}default{%endblock%}">
-      <body bgcolor="white">
-          {%block name%} <center><h3>PowerSmash</h3></center>{%endblock%}
-
-        <div>
-            {%block body%}<button>Home</button><button>Service</button><button>Members</button>
-            <button>Events</button><button>Blog</button>{%endblock%}
-
-          </div>
-
-      </body>
-  </body>
-=======
     <body>
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -44,7 +30,7 @@
               <ul class="nav navbar-nav">
                 <li><a href="{{ path('main_homepage') }}">Home</a>
                 <li><a href="{{ path('blog_homepage') }}">Blog</a>
-                <li><a href="{{ path('main_about')}}">About Us</a>
+                <li><a href="{{ path('main_about') }}">About Us</a>
                 {% block navbar %}
                 {% endblock %}
               </ul>
@@ -52,7 +38,8 @@
         </div>
       </nav>
         <div class="container">
-          {% block body %}{% endblock %}
+          {% block body %}
+          {% endblock %}
         </div>
         {% block javascripts %}
           {% javascripts filter="jsqueeze" output="js/scripts.js"
@@ -64,5 +51,5 @@
 		      {% endjavascripts %}
 	{% endblock %}
     </body>
->>>>>>> upstream/master
+
 </html>

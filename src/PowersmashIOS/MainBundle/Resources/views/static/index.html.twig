@@ -2,6 +2,29 @@
 
 {% block body %}
   <div class="jumbotron">
-    <h1>Powersmash Portal</h1>
+    <center><h1>Powersmash Portal</h1></center>
+    <div class="container">
+      <div id="imgholder">
+        {% image '@PowersmashIOSMainBundle/Resources/assets/img/smalllofo.png' %}
+        <center>  <img src="{{ asset_url }}"/> </center>
+        {% endimage %}
+      </div>
+    </div>
   </div>
+
+    <br>
+  <div class="container2">
+      <div class="col-md-4">
+        {{"Welcome to PowerSmash Website were lots of bonding moments happens!
+          This website will help us connect to each other and for us to render
+          our client a good service!" | capitalize}}
+      </div>
+    <div class="col-md-4">
+        {{"How the fuck did you know that I like eggs?" | capitalize}}
+      </div>
+      <div class="col-md-4">
+      {{"Breaks with random letters without proper formatting" | capitalize}}
+      </div>
+  </div>
+</div>
 {% endblock %}
